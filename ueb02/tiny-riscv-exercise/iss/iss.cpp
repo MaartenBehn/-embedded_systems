@@ -23,7 +23,18 @@ void ISS::run_step() {
 			break;
 
 		// TODO: Student task 1: Finalize 'I' Instrution set
-		// ...
+		
+		case Opcode::ANDI:
+			regs[instr.rd()] = regs[instr.rs1()] & instr.I_imm();
+			break;
+
+		case Opcode::ORI:
+			regs[instr.rd()] = regs[instr.rs1()] | instr.I_imm();
+			break;
+
+		case Opcode::XORI:
+			regs[instr.rd()] = regs[instr.rs1()] ^ instr.I_imm();
+			break;
 
 		case Opcode::SW: {
 			const uint32_t addr = regs[instr.rs1()] + instr.S_imm();
