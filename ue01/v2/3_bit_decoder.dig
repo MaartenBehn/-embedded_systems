@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>O</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="520" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes/>
+      <pos x="480" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>4</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>1,1,1,1</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="140" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>4</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>I</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>3</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>2,1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>2_bit_decoder.dig</elementName>
+      <elementAttributes/>
+      <pos x="180" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>The Input I has 3 bits, and the Output O has 8 bits. The first two least significant bits get into the 2bit-decoder,
+and the most significant bit gets split into four of its type. so if the msb of I is 0, its gets split into 0000, and if
+its 1, it gets split into 1111. the split msb now gets anded with the decoder-output twice.
+The first four lsbs of O will be determined by the decoder-output anded with the negation of the split msb.
+If the msb is 0, it will be negated to 1111, which will &quot;approve&quot; of the decoder-output for the first 4 bits of O,
+because it wont be a higher than 4 is the msb of I is 0. if its 1, the decoder-input will be added to the 1, and
+the and gates will make sure that it will be the last 4 bits of O.</string>
+        </entry>
+      </elementAttributes>
+      <pos x="20" y="-80"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="120" y="240"/>
+      <p2 x="140" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="320"/>
+      <p2 x="320" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="260"/>
+      <p2 x="140" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="180"/>
+      <p2 x="280" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="180"/>
+      <p2 x="80" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="180"/>
+      <p2 x="180" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="180"/>
+      <p2 x="320" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="200"/>
+      <p2 x="520" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="200"/>
+      <p2 x="480" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="200"/>
+      <p2 x="120" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="280"/>
+      <p2 x="320" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="280"/>
+      <p2 x="140" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="300"/>
+      <p2 x="420" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="220"/>
+      <p2 x="260" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="220"/>
+      <p2 x="480" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="220"/>
+      <p2 x="140" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="220"/>
+      <p2 x="300" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="220"/>
+      <p2 x="420" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="220"/>
+      <p2 x="260" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="180"/>
+      <p2 x="280" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="200"/>
+      <p2 x="120" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="260"/>
+      <p2 x="120" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="220"/>
+      <p2 x="120" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="240"/>
+      <p2 x="120" y="260"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
