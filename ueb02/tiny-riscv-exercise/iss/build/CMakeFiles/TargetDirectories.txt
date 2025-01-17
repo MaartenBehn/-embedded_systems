@@ -1,0 +1,3 @@
+/home/stroby/dev/embedded_systems/ueb02/tiny-riscv-exercise/iss/build/CMakeFiles/riscv-tiny-isa.dir
+/home/stroby/dev/embedded_systems/ueb02/tiny-riscv-exercise/iss/build/CMakeFiles/edit_cache.dir
+/home/stroby/dev/embedded_systems/ueb02/tiny-riscv-exercise/iss/build/CMakeFiles/rebuild_cache.dir
