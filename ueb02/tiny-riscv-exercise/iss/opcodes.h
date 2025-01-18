@@ -378,6 +378,46 @@ static Opcode::mapping decode(Instruction &instr) {
             break;
         }
 
+
+        case OP_ADDI:
+        {
+            switch (instr.funct3()) {
+                case F3_ADDI:
+                    return ADDI;
+
+                case F3_SLTI:
+                    return SLTI;
+        
+                case F3_SLTIU:
+                    return SLTIU;
+
+                case F3_XORI:
+                    return XORI;
+
+                case F3_ORI:
+                    return ORI;
+
+                case F3_ANDI:
+                    return ANDI;
+
+                case F3_SLLI:
+                    return SLLI;
+
+                case F3_SRLI: {
+                    switch (instr.funct7())
+                    {
+                    case F7_SRLI:
+                        return SRLI;
+
+                    case F7_SRAI:
+                        return SRAI;
+                    }
+                }
+            }
+            
+            break;
+        }
+
         case OP_ECALL: {
             switch (instr.funct3()) {
                 case F3_SYS: {
