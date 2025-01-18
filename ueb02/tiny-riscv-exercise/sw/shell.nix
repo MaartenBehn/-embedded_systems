@@ -19,21 +19,5 @@ riscv32-pkgs.mkShell rec {
       # riscv64-pkgs.buildPackages.buildPackages.qemu
       riscv32-pkgs.buildPackages.gdb
     ];
- 
-
-  packages = with pkgs; [
-    digital
-    cmake 
-    gnumake
-    boost
-    libarchive
-    bison
-    flex
-    gnum4
-  ];
-
-  shellHook = '' 
-    export PATH="/home/stroby/dev/embedded_systems/ueb02/riscv-gnu-toolchain/install/bin:$PATH"
-  '';
 }
 

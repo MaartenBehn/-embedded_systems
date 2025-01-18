@@ -23,7 +23,26 @@ void ISS::run_step() {
 			break;
 
 		// TODO: Student task 1: Finalize 'I' Instrution set
+
+		case Opcode::ADD:
+            regs[instr.rd()] = regs[instr.rs1()] + regs[instr.rs2()];
+            break;
+
+        case Opcode::SUB:
+            regs[instr.rd()] = regs[instr.rs1()] - regs[instr.rs2()];
+            break;
+
+
+        case Opcode::OR:
+            regs[instr.rd()] = regs[instr.rs1()] | regs[instr.rs2()];
+            break;
+
+        case Opcode::AND:
+            regs[instr.rd()] = regs[instr.rs1()] & regs[instr.rs2()];
+            break;
+
 		
+		/*
 		case Opcode::ANDI:
 			regs[instr.rd()] = regs[instr.rs1()] & instr.I_imm();
 			break;
@@ -35,6 +54,9 @@ void ISS::run_step() {
 		case Opcode::XORI:
 			regs[instr.rd()] = regs[instr.rs1()] ^ instr.I_imm();
 			break;
+		*/
+
+		// END
 
 		case Opcode::SW: {
 			const uint32_t addr = regs[instr.rs1()] + instr.S_imm();

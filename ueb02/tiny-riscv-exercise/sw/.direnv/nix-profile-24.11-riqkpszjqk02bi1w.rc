@@ -34,7 +34,7 @@ NIX_CC='/nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_riscv32_none_elf='1'
 export NIX_CC_WRAPPER_TARGET_HOST_riscv32_none_elf
-NIX_CFLAGS_COMPILE=' -frandom-seed=mcacg8is8m'
+NIX_CFLAGS_COMPILE=' -frandom-seed=8zw0gwmfs4'
 export NIX_CFLAGS_COMPILE
 NIX_DONT_SET_RPATH='1'
 export NIX_DONT_SET_RPATH
@@ -56,7 +56,7 @@ OLDPWD=''
 export OLDPWD
 OPTERR='1'
 OSTYPE='linux-gnu'
-PATH='/nix/store/5pm14qngrs4cdd201dic50c86qdhwxrb-digital-0.31/bin:/nix/store/24gbi6mcw4c6jgzai9aaxx9qi2rxdb09-cmake-3.29.6/bin:/nix/store/w44ahngg3y69rpq62f4agzl747y872as-gnumake-4.4.1/bin:/nix/store/0wwa7jizw9lwngxhxmk6jhdgfdv5p8g5-attr-2.5.2-bin/bin:/nix/store/yfj624whxp4slm792kg54fpfqiklhmn7-acl-2.3.2-bin/bin:/nix/store/c5lvryny41ddvayqsvr9b421jdzw825z-libarchive-3.7.4/bin:/nix/store/ifbn9jgaydafvhlkfkb18fz1cpn01b59-bison-3.8.2/bin:/nix/store/k9wk7v2jrri5ixwi5hqcpmb9j20vxbr1-gnum4-1.4.19/bin:/nix/store/0si7b9rpq858688kbrhwkjpsx88911mj-flex-2.6.4/bin:/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1/bin:/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0/bin:/nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper-13.3.0/bin:/nix/store/p5v6pa9r4rj9sm911yywhzj205hgqkya-riscv32-none-elf-gcc-13.3.0/bin:/nix/store/ph44jcx3ddmlwh394mh1wb7f1qigxqb1-coreutils-9.5/bin:/nix/store/32bjgr54b1b1lx6qxhndzy1hc5bzrfg4-riscv32-none-elf-binutils-wrapper-2.43.1/bin:/nix/store/ffqr22y7ryl40s7dx1a6yglhgmasyicx-riscv32-none-elf-binutils-2.43.1/bin:/nix/store/ph44jcx3ddmlwh394mh1wb7f1qigxqb1-coreutils-9.5/bin:/nix/store/yb8icljkwhk5lla4nci3myndq2m4ywly-findutils-4.10.0/bin:/nix/store/phqahkhjsk8sl2jjiid1d47l2s4wy33h-diffutils-3.10/bin:/nix/store/yd9vbyhbxx62j0cyhd6v0iacz11nxpvc-gnused-4.9/bin:/nix/store/lvnwdmnjm7nvaq0a3vhvvn46iy4ql7gr-gnugrep-3.11/bin:/nix/store/0np7q7np75csai2cwzx57n332vn9ig4i-gawk-5.2.2/bin:/nix/store/zvn9bvrl2g516d2hfnanljiw24qa6w8l-gnutar-1.35/bin:/nix/store/db379c3zrmncmbv5khqxpk6ggbhxjw61-gzip-1.13/bin:/nix/store/girfp68w14pxfii52ak8gcs212y4q2s2-bzip2-1.0.8-bin/bin:/nix/store/21y3gqgm2a3w94m0wcrz1xxshks80z7p-gnumake-4.4.1/bin:/nix/store/717iy55ncqs0wmhdkwc5fg2vci5wbmq8-bash-5.2p32/bin:/nix/store/91ixz3zw9ipc5j93gybir9fp5mzisq8w-patch-2.7.6/bin:/nix/store/6v73xwg2c7p5ap29ckyg18ng87pzlnxs-xz-5.6.2-bin/bin:/nix/store/a6nsbir3y5ni3wwkw933aqvcmyyywnnz-file-5.45/bin'
+PATH='/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1/bin:/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0/bin:/nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper-13.3.0/bin:/nix/store/p5v6pa9r4rj9sm911yywhzj205hgqkya-riscv32-none-elf-gcc-13.3.0/bin:/nix/store/ph44jcx3ddmlwh394mh1wb7f1qigxqb1-coreutils-9.5/bin:/nix/store/32bjgr54b1b1lx6qxhndzy1hc5bzrfg4-riscv32-none-elf-binutils-wrapper-2.43.1/bin:/nix/store/ffqr22y7ryl40s7dx1a6yglhgmasyicx-riscv32-none-elf-binutils-2.43.1/bin:/nix/store/ph44jcx3ddmlwh394mh1wb7f1qigxqb1-coreutils-9.5/bin:/nix/store/yb8icljkwhk5lla4nci3myndq2m4ywly-findutils-4.10.0/bin:/nix/store/phqahkhjsk8sl2jjiid1d47l2s4wy33h-diffutils-3.10/bin:/nix/store/yd9vbyhbxx62j0cyhd6v0iacz11nxpvc-gnused-4.9/bin:/nix/store/lvnwdmnjm7nvaq0a3vhvvn46iy4ql7gr-gnugrep-3.11/bin:/nix/store/0np7q7np75csai2cwzx57n332vn9ig4i-gawk-5.2.2/bin:/nix/store/zvn9bvrl2g516d2hfnanljiw24qa6w8l-gnutar-1.35/bin:/nix/store/db379c3zrmncmbv5khqxpk6ggbhxjw61-gzip-1.13/bin:/nix/store/girfp68w14pxfii52ak8gcs212y4q2s2-bzip2-1.0.8-bin/bin:/nix/store/21y3gqgm2a3w94m0wcrz1xxshks80z7p-gnumake-4.4.1/bin:/nix/store/717iy55ncqs0wmhdkwc5fg2vci5wbmq8-bash-5.2p32/bin:/nix/store/91ixz3zw9ipc5j93gybir9fp5mzisq8w-patch-2.7.6/bin:/nix/store/6v73xwg2c7p5ap29ckyg18ng87pzlnxs-xz-5.6.2-bin/bin:/nix/store/a6nsbir3y5ni3wwkw933aqvcmyyywnnz-file-5.45/bin'
 export PATH
 PS4='+ '
 RANLIB='riscv32-none-elf-ranlib'
@@ -73,7 +73,7 @@ STRINGS='riscv32-none-elf-strings'
 export STRINGS
 STRIP='riscv32-none-elf-strip'
 export STRIP
-XDG_DATA_DIRS='/nix/store/5pm14qngrs4cdd201dic50c86qdhwxrb-digital-0.31/share:/nix/store/24gbi6mcw4c6jgzai9aaxx9qi2rxdb09-cmake-3.29.6/share:/nix/store/w44ahngg3y69rpq62f4agzl747y872as-gnumake-4.4.1/share:/nix/store/20z0miv70wbl9xvrx4nvq6krrhfl5942-boost-1.81.0-dev/share:/nix/store/j6z0q427f6jm3d9mmrb4pgz72i93yp2f-attr-2.5.2/share:/nix/store/4ac0simsl36mz7ksv64ag7nmpc86s1mh-acl-2.3.2/share:/nix/store/c5lvryny41ddvayqsvr9b421jdzw825z-libarchive-3.7.4/share:/nix/store/ifbn9jgaydafvhlkfkb18fz1cpn01b59-bison-3.8.2/share:/nix/store/k9wk7v2jrri5ixwi5hqcpmb9j20vxbr1-gnum4-1.4.19/share:/nix/store/0si7b9rpq858688kbrhwkjpsx88911mj-flex-2.6.4/share:/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1/share:/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0/share'
+XDG_DATA_DIRS='/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1/share:/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0/share'
 export XDG_DATA_DIRS
 __structuredAttrs=''
 export __structuredAttrs
@@ -96,7 +96,6 @@ cmakeFlags='-DCMAKE_SYSTEM_NAME=Generic -DCMAKE_SYSTEM_PROCESSOR=riscv32 -DCMAKE
 export cmakeFlags
 configureFlags='--build=x86_64-unknown-linux-gnu --host=riscv32-none-elf'
 export configureFlags
-configurePhase='cmakeConfigurePhase'
 defaultBuildInputs=''
 defaultNativeBuildInputs='/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0 /nix/store/n9iajmgf6z1rvwrdxy3fp8q9xa16j7x7-update-autotools-gnu-config-scripts-hook /nix/store/dpy57f63843ygry40q1k81lf2q59fn23-update-autotools-gnu-config-scripts-hook /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh /nix/store/12lvf0c7xric9cny7slvf9cmhypl1p67-patch-shebangs.sh /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh /nix/store/aazf105snicrlvyzzbdj85sx4179rpfp-set-source-date-epoch-to-latest.sh /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh /nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper-13.3.0'
 depsBuildBuild=''
@@ -124,22 +123,19 @@ export dontAddDisableDepTrack
 declare -a envBuildBuildHooks=()
 declare -a envBuildHostHooks=()
 declare -a envBuildTargetHooks=()
-declare -a envHostHostHooks=('addCMakeParams' 'ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' )
-declare -a envHostTargetHooks=('addCMakeParams' 'ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' )
+declare -a envHostHostHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' )
+declare -a envHostTargetHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' )
 declare -a envTargetTargetHooks=()
 declare -a fixupOutputHooks=('if [ -z "${dontPatchELF-}" ]; then patchELF "$prefix"; fi' 'if [[ -z "${noAuditTmpdir-}" && -e "$prefix" ]]; then auditTmpdir "$prefix"; fi' 'if [ -z "${dontGzipMan-}" ]; then compressManPages "$prefix"; fi' '_moveLib64' '_moveSbin' '_moveSystemdUserUnits' 'patchShebangsAuto' '_pruneLibtoolFiles' '_doStrip' )
-flag='-frandom-seed=mcacg8is8m'
 guess='8'
-iframework_seen=''
 initialPath='/nix/store/ph44jcx3ddmlwh394mh1wb7f1qigxqb1-coreutils-9.5 /nix/store/yb8icljkwhk5lla4nci3myndq2m4ywly-findutils-4.10.0 /nix/store/phqahkhjsk8sl2jjiid1d47l2s4wy33h-diffutils-3.10 /nix/store/yd9vbyhbxx62j0cyhd6v0iacz11nxpvc-gnused-4.9 /nix/store/lvnwdmnjm7nvaq0a3vhvvn46iy4ql7gr-gnugrep-3.11 /nix/store/0np7q7np75csai2cwzx57n332vn9ig4i-gawk-5.2.2 /nix/store/zvn9bvrl2g516d2hfnanljiw24qa6w8l-gnutar-1.35 /nix/store/db379c3zrmncmbv5khqxpk6ggbhxjw61-gzip-1.13 /nix/store/girfp68w14pxfii52ak8gcs212y4q2s2-bzip2-1.0.8-bin /nix/store/21y3gqgm2a3w94m0wcrz1xxshks80z7p-gnumake-4.4.1 /nix/store/717iy55ncqs0wmhdkwc5fg2vci5wbmq8-bash-5.2p32 /nix/store/91ixz3zw9ipc5j93gybir9fp5mzisq8w-patch-2.7.6 /nix/store/6v73xwg2c7p5ap29ckyg18ng87pzlnxs-xz-5.6.2-bin /nix/store/a6nsbir3y5ni3wwkw933aqvcmyyywnnz-file-5.45'
-isystem_seen=''
 mesonFlags='--cross-file=/nix/store/c9xc9fbzx4fgiaidm6a8jn5a2g0klzh3-cross-file.conf'
 export mesonFlags
 name='embedded_systems-riscv32-none-elf-env'
 export name
-nativeBuildInputs='/nix/store/5pm14qngrs4cdd201dic50c86qdhwxrb-digital-0.31 /nix/store/24gbi6mcw4c6jgzai9aaxx9qi2rxdb09-cmake-3.29.6 /nix/store/w44ahngg3y69rpq62f4agzl747y872as-gnumake-4.4.1 /nix/store/20z0miv70wbl9xvrx4nvq6krrhfl5942-boost-1.81.0-dev /nix/store/maafv8cgs6ykcgpq6pyh4wcx901mr6zf-libarchive-3.7.4-dev /nix/store/ifbn9jgaydafvhlkfkb18fz1cpn01b59-bison-3.8.2 /nix/store/0si7b9rpq858688kbrhwkjpsx88911mj-flex-2.6.4 /nix/store/k9wk7v2jrri5ixwi5hqcpmb9j20vxbr1-gnum4-1.4.19 /nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1'
+nativeBuildInputs='/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1'
 export nativeBuildInputs
-out='/home/stroby/dev/embedded_systems/outputs/out'
+out='/home/stroby/dev/embedded_systems/ueb02/tiny-riscv-exercise/sw/outputs/out'
 export out
 outputBin='out'
 outputDev='out'
@@ -158,20 +154,19 @@ phases='buildPhase'
 export phases
 pkg='/nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper-13.3.0'
 declare -a pkgsBuildBuild=()
-declare -a pkgsBuildHost=('/nix/store/5pm14qngrs4cdd201dic50c86qdhwxrb-digital-0.31' '/nix/store/24gbi6mcw4c6jgzai9aaxx9qi2rxdb09-cmake-3.29.6' '/nix/store/w44ahngg3y69rpq62f4agzl747y872as-gnumake-4.4.1' '/nix/store/20z0miv70wbl9xvrx4nvq6krrhfl5942-boost-1.81.0-dev' '/nix/store/rada92dgkcprib5gg4czaq1k65sidqrc-boost-1.81.0' '/nix/store/maafv8cgs6ykcgpq6pyh4wcx901mr6zf-libarchive-3.7.4-dev' '/nix/store/cyx0mb5s19fwwn2z32ck773l38w3bdxb-attr-2.5.2-dev' '/nix/store/0wwa7jizw9lwngxhxmk6jhdgfdv5p8g5-attr-2.5.2-bin' '/nix/store/j6z0q427f6jm3d9mmrb4pgz72i93yp2f-attr-2.5.2' '/nix/store/zxw7jqh2iyrvc9k9iy2ma7yjfal616hl-acl-2.3.2-dev' '/nix/store/yfj624whxp4slm792kg54fpfqiklhmn7-acl-2.3.2-bin' '/nix/store/4ac0simsl36mz7ksv64ag7nmpc86s1mh-acl-2.3.2' '/nix/store/y07p0jsmbkwn7iww6w8r8cyq8h920yx0-libarchive-3.7.4-lib' '/nix/store/c5lvryny41ddvayqsvr9b421jdzw825z-libarchive-3.7.4' '/nix/store/ifbn9jgaydafvhlkfkb18fz1cpn01b59-bison-3.8.2' '/nix/store/k9wk7v2jrri5ixwi5hqcpmb9j20vxbr1-gnum4-1.4.19' '/nix/store/0si7b9rpq858688kbrhwkjpsx88911mj-flex-2.6.4' '/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1' '/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0' '/nix/store/n9iajmgf6z1rvwrdxy3fp8q9xa16j7x7-update-autotools-gnu-config-scripts-hook' '/nix/store/dpy57f63843ygry40q1k81lf2q59fn23-update-autotools-gnu-config-scripts-hook' '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh' '/nix/store/12lvf0c7xric9cny7slvf9cmhypl1p67-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/aazf105snicrlvyzzbdj85sx4179rpfp-set-source-date-epoch-to-latest.sh' '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh' '/nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper-13.3.0' '/nix/store/32bjgr54b1b1lx6qxhndzy1hc5bzrfg4-riscv32-none-elf-binutils-wrapper-2.43.1' )
+declare -a pkgsBuildHost=('/nix/store/hsm5ciwfwz7n144z1zhkbcdp4pggwnnd-riscv32-none-elf-gdb-15.1' '/nix/store/dvfb5mrpfhg5211v6pl0a3fmz9idg6w7-patchelf-0.15.0' '/nix/store/n9iajmgf6z1rvwrdxy3fp8q9xa16j7x7-update-autotools-gnu-config-scripts-hook' '/nix/store/dpy57f63843ygry40q1k81lf2q59fn23-update-autotools-gnu-config-scripts-hook' '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh' '/nix/store/12lvf0c7xric9cny7slvf9cmhypl1p67-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/aazf105snicrlvyzzbdj85sx4179rpfp-set-source-date-epoch-to-latest.sh' '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh' '/nix/store/19pkwc2qgdjyf8l1m7r38n7l5ys1vkhn-riscv32-none-elf-gcc-wrapper-13.3.0' '/nix/store/32bjgr54b1b1lx6qxhndzy1hc5bzrfg4-riscv32-none-elf-binutils-wrapper-2.43.1' )
 declare -a pkgsBuildTarget=()
 declare -a pkgsHostHost=()
 declare -a pkgsHostTarget=()
 declare -a pkgsTargetTarget=()
-declare -a postFixupHooks=('cmakePcfileCheckPhase' '_makeSymlinksRelativeInAllOutputs' '_multioutPropagateDev' )
-declare -a postHooks=('makeCmakeFindLibs' )
+declare -a postFixupHooks=('_makeSymlinksRelativeInAllOutputs' '_multioutPropagateDev' )
 declare -a postUnpackHooks=('_updateSourceDateEpochFromSourceRoot' )
 declare -a preConfigureHooks=('_multioutConfig' )
 preConfigurePhases=' updateAutotoolsGnuConfigScriptsPhase updateAutotoolsGnuConfigScriptsPhase'
 declare -a preFixupHooks=('_moveToShare' '_multioutDocs' '_multioutDevs' )
 preferLocalBuild='1'
 export preferLocalBuild
-prefix='/home/stroby/dev/embedded_systems/outputs/out'
+prefix='/home/stroby/dev/embedded_systems/ueb02/tiny-riscv-exercise/sw/outputs/out'
 declare -a propagatedBuildDepFiles=('propagated-build-build-deps' 'propagated-native-build-inputs' 'propagated-build-target-deps' )
 propagatedBuildInputs=''
 export propagatedBuildInputs
@@ -179,7 +174,6 @@ declare -a propagatedHostDepFiles=('propagated-host-host-deps' 'propagated-build
 propagatedNativeBuildInputs=''
 export propagatedNativeBuildInputs
 declare -a propagatedTargetDepFiles=('propagated-target-target-deps' )
-setOutputFlags=''
 shell='/nix/store/717iy55ncqs0wmhdkwc5fg2vci5wbmq8-bash-5.2p32/bin/bash'
 export shell
 shellHook=''
@@ -650,11 +644,6 @@ activatePackage ()
         source "$pkg/nix-support/setup-hook";
     fi
 }
-addCMakeParams ()
-{
- 
-    addToSearchPath NIXPKGS_CMAKE_PREFIX_PATH $1
-}
 addEnvHooks ()
 {
  
@@ -814,102 +803,6 @@ checkPhase ()
         unset flagsArray;
     fi;
     runHook postCheck
-}
-cmakeConfigurePhase ()
-{
- 
-    runHook preConfigure;
-    : ${cmakeBuildDir:=build};
-    export CTEST_OUTPUT_ON_FAILURE=1;
-    if [ -n "${enableParallelChecking-1}" ]; then
-        export CTEST_PARALLEL_LEVEL=$NIX_BUILD_CORES;
-    fi;
-    if [ -z "${dontFixCmake-}" ]; then
-        fixCmakeFiles .;
-    fi;
-    if [ -z "${dontUseCmakeBuildDir-}" ]; then
-        mkdir -p "$cmakeBuildDir";
-        cd "$cmakeBuildDir";
-        : ${cmakeDir:=..};
-    else
-        : ${cmakeDir:=.};
-    fi;
-    if [ -z "${dontAddPrefix-}" ]; then
-        prependToVar cmakeFlags "-DCMAKE_INSTALL_PREFIX=$prefix";
-    fi;
-    prependToVar cmakeFlags "-DCMAKE_CXX_COMPILER=$CXX";
-    prependToVar cmakeFlags "-DCMAKE_C_COMPILER=$CC";
-    prependToVar cmakeFlags "-DCMAKE_AR=$(command -v $AR)";
-    prependToVar cmakeFlags "-DCMAKE_RANLIB=$(command -v $RANLIB)";
-    prependToVar cmakeFlags "-DCMAKE_STRIP=$(command -v $STRIP)";
-    prependToVar cmakeFlags "-DCMAKE_FIND_FRAMEWORK=LAST";
-    prependToVar cmakeFlags "-DCMAKE_OSX_SYSROOT=";
-    prependToVar cmakeFlags "-DCMAKE_POLICY_DEFAULT_CMP0025=NEW";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_NAME_DIR=${!outputLib}/lib";
-    if [[ -z "$shareDocName" ]]; then
-        local cmakeLists="${cmakeDir}/CMakeLists.txt";
-        if [[ -f "$cmakeLists" ]]; then
-            local shareDocName="$(grep --only-matching --perl-regexp --ignore-case '\bproject\s*\(\s*"?\K([^[:space:]")]+)' < "$cmakeLists" | head -n1)";
-        fi;
-        if [[ -z "$shareDocName" ]] || echo "$shareDocName" | grep -q '[^a-zA-Z0-9_+-]'; then
-            if [[ -n "${pname-}" ]]; then
-                shareDocName="$pname";
-            else
-                shareDocName="$(echo "$name" | sed 's/-[^a-zA-Z].*//')";
-            fi;
-        fi;
-    fi;
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_BINDIR=${!outputBin}/bin";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_SBINDIR=${!outputBin}/sbin";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_INCLUDEDIR=${!outputInclude}/include";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_OLDINCLUDEDIR=${!outputInclude}/include";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_MANDIR=${!outputMan}/share/man";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_INFODIR=${!outputInfo}/share/info";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_DOCDIR=${!outputDoc}/share/doc/${shareDocName}";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_LIBDIR=${!outputLib}/lib";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_LIBEXECDIR=${!outputLib}/libexec";
-    prependToVar cmakeFlags "-DCMAKE_INSTALL_LOCALEDIR=${!outputLib}/share/locale";
-    if [ -z "${doCheck-}" ]; then
-        prependToVar cmakeFlags "-DBUILD_TESTING=OFF";
-    fi;
-    prependToVar cmakeFlags "-DCMAKE_BUILD_TYPE=${cmakeBuildType:-Release}";
-    prependToVar cmakeFlags "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON";
-    prependToVar cmakeFlags "-DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF";
-    prependToVar cmakeFlags "-DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF";
-    if [ "${buildPhase-}" = ninjaBuildPhase ]; then
-        prependToVar cmakeFlags "-GNinja";
-    fi;
-    local flagsArray=();
-    concatTo flagsArray cmakeFlags cmakeFlagsArray;
-    echoCmd 'cmake flags' "${flagsArray[@]}";
-    cmake "$cmakeDir" "${flagsArray[@]}";
-    if ! [[ -v enableParallelBuilding ]]; then
-        enableParallelBuilding=1;
-        echo "cmake: enabled parallel building";
-    fi;
-    if ! [[ -v enableParallelInstalling ]]; then
-        enableParallelInstalling=1;
-        echo "cmake: enabled parallel installing";
-    fi;
-    runHook postConfigure
-}
-cmakePcfileCheckPhase ()
-{
- 
-    while IFS= read -rd '' file; do
-        grepout=$(grep --line-number '}//nix/store' "$file" || true);
-        if [ -n "$grepout" ]; then
-            { 
-                echo "Broken paths found in a .pc file! $file";
-                echo "The following lines have issues (specifically '//' in paths).";
-                echo "$grepout";
-                echo "It is very likely that paths are being joined improperly.";
-                echo 'ex: "${prefix}/@CMAKE_INSTALL_LIBDIR@" should be "@CMAKE_INSTALL_FULL_LIBDIR@"';
-                echo "Please see https://github.com/NixOS/nixpkgs/issues/144170 for more details.";
-                exit 1
-            } 1>&2;
-        fi;
-    done < <(find "${!outputDev}" -iname "*.pc" -print0)
 }
 compressManPages ()
 {
@@ -1167,15 +1060,6 @@ findInputs ()
         done;
     done
 }
-fixCmakeFiles ()
-{
- 
-    echo "fixing cmake files...";
-    find "$1" -type f \( -name "*.cmake" -o -name "*.cmake.in" -o -name CMakeLists.txt \) -print | while read fn; do
-        sed -e 's^/usr\([ /]\|$\)^/var/empty\1^g' -e 's^/opt\([ /]\|$\)^/var/empty\1^g' < "$fn" > "$fn.tmp";
-        mv "$fn.tmp" "$fn";
-    done
-}
 fixLibtool ()
 {
  
@@ -1408,44 +1292,6 @@ isScript ()
     else
         return 1;
     fi
-}
-makeCmakeFindLibs ()
-{
- 
-    isystem_seen=;
-    iframework_seen=;
-    for flag in ${NIX_CFLAGS_COMPILE-} ${NIX_LDFLAGS-};
-    do
-        if test -n "$isystem_seen" && test -d "$flag"; then
-            isystem_seen=;
-            addToSearchPath CMAKE_INCLUDE_PATH "${flag}";
-        else
-            if test -n "$iframework_seen" && test -d "$flag"; then
-                iframework_seen=;
-                addToSearchPath CMAKE_FRAMEWORK_PATH "${flag}";
-            else
-                isystem_seen=;
-                iframework_seen=;
-                case $flag in 
-                    -I*)
-                        addToSearchPath CMAKE_INCLUDE_PATH "${flag:2}"
-                    ;;
-                    -L*)
-                        addToSearchPath CMAKE_LIBRARY_PATH "${flag:2}"
-                    ;;
-                    -F*)
-                        addToSearchPath CMAKE_FRAMEWORK_PATH "${flag:2}"
-                    ;;
-                    -isystem)
-                        isystem_seen=1
-                    ;;
-                    -iframework)
-                        iframework_seen=1
-                    ;;
-                esac;
-            fi;
-        fi;
-    done
 }
 mapOffset ()
 {

@@ -133,6 +133,28 @@ namespace Opcode {
 
         // TODO: Task 1
         // ADD,..., Register - Register Operations
+        OP_ADD = 0b0110011,
+        F3_ADD = 0b000,
+        // F3_SUB    = 0b000,
+        F3_SLTU = 0b011,
+        F3_XOR = 0b100,
+        F3_OR = 0b110,
+        F3_AND = 0b111,
+        F3_SLL = 0b001,
+        F3_SRL = 0b101,
+        F3_SLT = 0b010,
+        // F3_SRA    = 0b101,
+        // F7
+        F7_ADD = 0b0000000,
+        F7_SUB = 0b0100000,
+        // F7_SLTU = 0b0000000,
+        // F7_XOR = 0b0000000,
+        // F7_OR = 0b0000000,
+        // F7_AND = 0b0000000,
+        // F7_SLL = 0b0000000,
+        F7_SRL = 0b0000000,
+        // F7_SLT = 0b0000000,
+        F7_SRA = 0b0100000,
         // End Task 1
 
         // TODO: Task 2 M-Extension
@@ -308,6 +330,53 @@ static Opcode::mapping decode(Instruction &instr) {
 
         // TODO Student Task 1:
         // Decode ADD etc
+        case OP_ADD:
+        {
+            switch (instr.funct3()) {
+            case F3_ADD:
+            {
+                switch (instr.funct7())
+                {
+                case F7_ADD:
+                    return ADD;
+
+                case F7_SUB:
+                    return SUB;
+                }
+            }
+
+            case F3_SLTU:
+                return SLTU;
+
+            case F3_XOR:
+                return XOR;
+
+            case F3_OR:
+                return OR;
+
+            case F3_AND:
+                return AND;
+
+            case F3_SLL:
+                return SLL;
+
+            case F3_SRL: {
+                switch (instr.funct7())
+                {
+                case F7_SRL:
+                    return SRL;
+
+                case F7_SRA:
+                    return SRA;
+                }
+            }
+
+            case F3_SLT:
+                return SLT;
+            }
+            
+            break;
+        }
 
         case OP_ECALL: {
             switch (instr.funct3()) {
