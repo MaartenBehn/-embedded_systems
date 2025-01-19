@@ -1,4 +1,4 @@
-CC=/home/dwd/dev/riscv-gnu-toolchain-tainted/install/bin/riscv32-unknown-elf
+CC=riscv32-none-elf
 
 all : factor.o
 	$(CC)-ld factor.o -o main
