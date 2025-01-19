@@ -165,6 +165,37 @@ void ISS::run_step() {
 			break;
 
 		// TODO: Student task 2 'M' Set
+		case Opcode::MUL:
+			regs[instr.rd()] = regs[instr.rs1()] * regs[instr.rs2()];
+			break;
+
+		case Opcode::MULH: // TODO Whats the difference to MUL implementation
+			regs[instr.rd()] = regs[instr.rs1()] * regs[instr.rs2()];
+			break;
+
+		case Opcode::MULHSU:
+			regs[instr.rd()] = regs[instr.rs1()] * regs[instr.rs2()];
+			break;
+
+		case Opcode::MULHU:
+			regs[instr.rd()] = regs[instr.rs1()] * regs[instr.rs2()];
+			break;
+
+		case Opcode::DIV:
+			regs[instr.rd()] = regs[instr.rs1()] / regs[instr.rs2()];
+			break;
+		
+		case Opcode::DIVU:
+			regs[instr.rd()] = regs[instr.rs1()] / regs[instr.rs2()];
+			break;
+
+		case Opcode::REM:
+			regs[instr.rd()] = regs[instr.rs1()] % regs[instr.rs2()];
+			break;
+
+		case Opcode::REMU:
+			regs[instr.rd()] = regs[instr.rs1()] % regs[instr.rs2()];
+			break;
 
 		// TODO: Student Task 4 FLT and FLTZ
 
@@ -176,7 +207,16 @@ void ISS::run_step() {
 					shall_exit = true;
 					break;
 				// TODO: Student task 3 "other syscalls"
-				// ------ End Task 2
+
+/*
+				case Syscalls::SYS_print_int:
+					std::cout << regs[RegFile::a0] << std::endl;
+					shall_exit = true;
+					break;
+					*/
+
+
+				// ------ End Task 3
 				default:
 					throw std::runtime_error("unknown syscall " + std::to_string(syscall));
 			}

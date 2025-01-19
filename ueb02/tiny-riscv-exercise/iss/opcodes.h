@@ -133,32 +133,48 @@ namespace Opcode {
 
         // TODO: Task 1
         // ADD,..., Register - Register Operations
-        OP_ADD = 0b0110011,
-        F3_ADD = 0b000,
-        // F3_SUB    = 0b000,
+        OP_ADD  = 0b0110011,
+        F3_ADD  = 0b000,
+        // F3_SUB  = 0b000,
         F3_SLTU = 0b011,
-        F3_XOR = 0b100,
-        F3_OR = 0b110,
-        F3_AND = 0b111,
-        F3_SLL = 0b001,
-        F3_SRL = 0b101,
-        F3_SLT = 0b010,
-        // F3_SRA    = 0b101,
-        // F7
+        F3_XOR  = 0b100,
+        F3_OR   = 0b110,
+        F3_AND  = 0b111,
+        F3_SLL  = 0b001,
+        F3_SRL  = 0b101,
+        F3_SLT  = 0b010,
+        // F3_SRA  = 0b101,
         F7_ADD = 0b0000000,
         F7_SUB = 0b0100000,
-        // F7_SLTU = 0b0000000,
-        // F7_XOR = 0b0000000,
-        // F7_OR = 0b0000000,
-        // F7_AND = 0b0000000,
-        // F7_SLL = 0b0000000,
+        F7_SLTU = 0b0000000,
+        F7_XOR = 0b0000000,
+        F7_OR = 0b0000000,
+        F7_AND = 0b0000000,
+        F7_SLL = 0b0000000,
         F7_SRL = 0b0000000,
-        // F7_SLT = 0b0000000,
+        F7_SLT = 0b0000000,
         F7_SRA = 0b0100000,
         // End Task 1
 
-        // TODO: Task 2 M-Extension
-        // End Task 2
+        // TODO: Task 3 M-Extension
+        // OP_MUL    = 0b0110011,
+        // F3_MUL    = 0b000,
+        // F3_MULH   = 0b001,
+        // F3_MULHSU = 0b010,
+        // F3_MULHU  = 0b011,
+        // F3_DIV    = 0b100,
+        // F3_DIVU   = 0b101,
+        // F3_REM    = 0b110,
+        // F3_REMU   = 0b111,
+        F7_MUL    = 0b0000001,
+        F7_MULH   = 0b0000001,
+        F7_MULHSU = 0b0000001,
+        F7_MULHU  = 0b0000001,
+        F7_DIV    = 0b0000001,
+        F7_DIVU   = 0b0000001,
+        F7_REM    = 0b0000001,
+        F7_REMU   = 0b0000001,
+        // End Task 3
 
         OP_ECALL   = 0b1110011,
         F3_SYS     = 0b000,
@@ -328,54 +344,120 @@ static Opcode::mapping decode(Instruction &instr) {
             break;
         }
 
-        // TODO Student Task 1:
-        // Decode ADD etc
-        case OP_ADD:
+        // TODO Student Task 1 & 3:
+        case OP_ADD: // 0110011 also OP_MUL
         {
             switch (instr.funct3()) {
-            case F3_ADD:
-            {
-                switch (instr.funct7())
+                case F3_ADD: // 0x0
                 {
-                case F7_ADD:
-                    return ADD;
+                    switch (instr.funct7())
+                    {
+                    case F7_ADD: // 0x00
+                        return ADD;
 
-                case F7_SUB:
-                    return SUB;
+                    case F7_SUB: // 0x20
+                        return SUB;
+                    
+                    case F7_MUL: // 0x01
+                        return MUL;
+                    }
+                    break;
                 }
-            }
 
-            case F3_SLTU:
-                return SLTU;
-
-            case F3_XOR:
-                return XOR;
-
-            case F3_OR:
-                return OR;
-
-            case F3_AND:
-                return AND;
-
-            case F3_SLL:
-                return SLL;
-
-            case F3_SRL: {
-                switch (instr.funct7())
+                case F3_XOR: // 0x4
                 {
-                case F7_SRL:
-                    return SRL;
+                    switch (instr.funct7())
+                    {
+                    case F7_XOR: // 0x00
+                        return XOR;
 
-                case F7_SRA:
-                    return SRA;
+                    case F7_DIV: // 0x01
+                        return DIV;
+                    }
+                    break;
                 }
-            }
 
-            case F3_SLT:
-                return SLT;
+                case F3_OR:   // 0x6
+                {
+                    switch (instr.funct7())
+                    {
+                    case F7_OR: // 0x00
+                        return OR;
+
+                    case F7_REM: // 0x01
+                        return REM;
+                    }
+                    break;
+                }
+
+                case F3_AND:  // 0x7
+                {
+                    switch (instr.funct7())
+                    {
+                    case F7_AND: // 0x00
+                        return OR;
+
+                    case F7_REMU: // 0x01
+                        return REMU;
+                    }
+                    break;
+                }
+
+                case F3_SLL: // 0x1
+                {
+                    switch (instr.funct7())
+                    {
+                    case F7_SLL: // 0x00
+                        return SLL;
+
+                    case F7_MULH: // 0x01
+                        return MULH;
+                    }
+                    break;
+                }
+                case F3_SRL:  // 0x5
+                {
+                    switch (instr.funct7())
+                    {
+                    case F7_SRL: // 0x00
+                        return SRL;
+
+                    case F7_SRA: // 0x20
+                        return SRA;
+                    
+                    case F7_DIVU: // 0x01
+                        return DIVU;
+                    }
+                    break;
+                }
+
+                case F3_SLT:  // 0x2
+                {
+                    switch (instr.funct7())
+                    {
+                    case F7_SLT: // 0x00
+                        return SLT;
+
+                    case F7_MULHSU: // 0x01
+                        return MULHSU;
+                    }
+                    break;
+                }
+
+                case F3_SLTU: // 0x3
+                {
+                    switch (instr.funct7())
+                    {
+                    case F7_SLTU: // 0x00
+                        return SLTU;
+
+                    case F7_MULHU: // 0x01
+                        return MULHU;
+                    }
+                    break;
+                }
+                break;
             }
-            
-            break;
         }
 
 
@@ -444,7 +526,7 @@ static Opcode::mapping decode(Instruction &instr) {
             }
             break;
         }
-        
+
         // TODO: Student Task 4
         // Decode FLZ FLTZ
     }
