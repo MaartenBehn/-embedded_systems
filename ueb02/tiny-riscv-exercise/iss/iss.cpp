@@ -23,38 +23,117 @@ void ISS::run_step() {
 			break;
 
 		// TODO: Student task 1: Finalize 'I' Instrution set
-
-		case Opcode::ADD:
-            regs[instr.rd()] = regs[instr.rs1()] + regs[instr.rs2()];
-            break;
-
-        case Opcode::SUB:
-            regs[instr.rd()] = regs[instr.rs1()] - regs[instr.rs2()];
-            break;
-
-
-        case Opcode::OR:
-            regs[instr.rd()] = regs[instr.rs1()] | regs[instr.rs2()];
-            break;
-
-        case Opcode::AND:
-            regs[instr.rd()] = regs[instr.rs1()] & regs[instr.rs2()];
-            break;
-
 		
-		/*
-		case Opcode::ANDI:
-			regs[instr.rd()] = regs[instr.rs1()] & instr.I_imm();
+		case Opcode::SLTI:
+			if ((int32_t)regs[instr.rs1()] < (int32_t)instr.I_imm())
+				regs[instr.rd()] = 1; 
+			else 
+				regs[instr.rd()] = 0; 
+			break;
+		
+		case Opcode::SLTIU:
+			if ((uint32_t)regs[instr.rs1()] < (uint32_t)instr.I_imm())
+				regs[instr.rd()] = 1; 
+			else 
+				regs[instr.rd()] = 0; 
+			break;
+		
+		case Opcode::XORI:
+			regs[instr.rd()] = regs[instr.rs1()] ^ instr.I_imm();
 			break;
 
 		case Opcode::ORI:
 			regs[instr.rd()] = regs[instr.rs1()] | instr.I_imm();
 			break;
 
-		case Opcode::XORI:
-			regs[instr.rd()] = regs[instr.rs1()] ^ instr.I_imm();
+		case Opcode::ANDI:
+			regs[instr.rd()] = regs[instr.rs1()] & instr.I_imm();
 			break;
-		*/
+		
+		case Opcode::SLLI:
+			regs[instr.rd()] = regs[instr.rs1()] << instr.I_imm();
+			break;
+		
+		case Opcode::SRLI:
+			regs[instr.rd()] = regs[instr.rs1()] >> instr.I_imm();
+			break;
+
+		case Opcode::SRAI:
+			regs[instr.rd()] = regs[instr.rs1()] >> instr.I_imm();
+			break;
+		
+
+		// Register operations
+
+		case Opcode::ADD:
+			regs[instr.rd()] = regs[instr.rs1()] + regs[instr.rs2()];
+			break;
+
+		case Opcode::SUB:
+			regs[instr.rd()] = regs[instr.rs1()] - regs[instr.rs2()];
+			break;
+
+		case Opcode::SLT:
+			regs[instr.rd()] = regs[instr.rs1()] - regs[instr.rs2()];
+			break;
+
+		case Opcode::SLL:
+			regs[instr.rd()] = regs[instr.rs1()] << regs[instr.rs2()];
+			break;
+		
+		case Opcode::SLTU:
+			if ((uint32_t)regs[instr.rs1()] < (uint32_t)regs[instr.rs2()])
+				regs[instr.rd()] = 1; 
+			else 
+				regs[instr.rd()] = 0; 
+			break;
+		
+		case Opcode::XOR:
+			regs[instr.rd()] = regs[instr.rs1()] ^ regs[instr.rs2()];
+			break;
+
+		case Opcode::SRL:
+			regs[instr.rd()] = regs[instr.rs1()] >> regs[instr.rs2()];
+			break;
+		
+		case Opcode::SRA:
+			regs[instr.rd()] = regs[instr.rs1()] >> regs[instr.rs2()];
+			break;
+
+		case Opcode::OR:
+			regs[instr.rd()] = regs[instr.rs1()] | regs[instr.rs2()];
+			break;
+
+		case Opcode::AND:
+			regs[instr.rd()] = regs[instr.rs1()] & regs[instr.rs2()];
+			break;
+
+		case Opcode::BGE:
+			if ((int32_t)regs[instr.rs1()] >= (int32_t)regs[instr.rs2()])
+				pc = last_pc + instr.B_imm();
+			break;
+
+		//rd = PC+4; PC += imm
+		case Opcode::JAL:
+			regs[instr.rd()] = pc + 4; 
+			pc = last_pc + instr.J_imm();
+			break;
+
+		// PC+4; PC = rs1 + imm
+		case Opcode::JALR:
+			regs[instr.rd()] = pc + 4; 
+			pc = regs[instr.rs1()] + instr.J_imm();
+			break;
+
+		// rd = imm << 12
+		case Opcode::LUI:
+			regs[(int32_t)instr.rd()] = instr.U_imm() << 12;
+			break;
+		
+		// rd = PC + (imm << 12)
+		case Opcode::AUIPC:
+			regs[instr.rd()] = pc + (instr.U_imm() << 12);
+			break;
 
 		// END
 
