@@ -207,11 +207,11 @@ namespace Opcode {
         F5_AMOMINU_W  = 0b11000,
         F5_AMOMAXU_W  = 0b11100,
         
-        // TODO: Task 3 "Custom Instruction"
+        // TODO: Task 4 "Custom Instruction"
         OP_FOR   = 0b0001011,
         F3_FLT   = 0b000,
         F3_FNEQZ = 0b001,
-		// End Task 3
+		// End Task 4
     };
 
     enum mapping {
@@ -529,6 +529,16 @@ static Opcode::mapping decode(Instruction &instr) {
 
         // TODO: Student Task 4
         // Decode FLZ FLTZ
+
+        case OP_FOR: {
+            switch (instr.funct3()) {
+                case F3_FLT:
+                    return FLT;
+                case F3_FNEQZ:
+                    return FNEQZ;
+            }
+            break;
+        }
     }
 
     throw std::runtime_error("unknown instruction " + std::to_string(instr.opcode()) );

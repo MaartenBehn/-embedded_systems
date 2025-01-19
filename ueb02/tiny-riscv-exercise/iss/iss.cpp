@@ -198,6 +198,9 @@ void ISS::run_step() {
 			break;
 
 		// TODO: Student Task 4 FLT and FLTZ
+		case Opcode::FLT:
+
+		case Opcode::FLTZ:
 
 		case Opcode::ECALL: {
 			auto syscall = regs[RegFile::a7];
@@ -207,14 +210,6 @@ void ISS::run_step() {
 					shall_exit = true;
 					break;
 				// TODO: Student task 3 "other syscalls"
-
-/*
-				case Syscalls::SYS_print_int:
-					std::cout << regs[RegFile::a0] << std::endl;
-					shall_exit = true;
-					break;
-					*/
-
 
 				// ------ End Task 3
 				default:

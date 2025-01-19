@@ -27,3 +27,9 @@ cd factorize-custom
 make clean 
 make sim 
 cd ..
+
+echo " --- c-peripheral --- "
+cd c-peripheral
+make clean 
+make sim 
+cd ..
