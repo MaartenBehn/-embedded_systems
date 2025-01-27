@@ -22,7 +22,9 @@ int main(int argc, char **argv) {
 
     // connecting all memory mapped devices
     bus.map.emplace_front(Bus::Mapping{.from = 0x0, .to = MEM_SIZE, .dev = &mem});
-    // TODO: Task 5
+    // TODO: Task 4
+
+    bus.map.emplace_front(Bus::Mapping{.from = 0x900000, .to = 0x900008, .dev = &printer});
 
     // The following line is only valid if memory starts at 0x0!
     loader.load_executable_image(mem.misaligned_mem, mem.size_bytes);

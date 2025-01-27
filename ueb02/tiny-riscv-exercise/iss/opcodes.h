@@ -206,12 +206,6 @@ namespace Opcode {
         F5_AMOMAX_W   = 0b10100,
         F5_AMOMINU_W  = 0b11000,
         F5_AMOMAXU_W  = 0b11100,
-        
-        // TODO: Task 4 "Custom Instruction"
-        OP_FOR   = 0b0001011,
-        F3_FLT   = 0b000,
-        F3_FNEQZ = 0b001,
-		// End Task 4
     };
 
     enum mapping {
@@ -273,10 +267,6 @@ namespace Opcode {
         DIVU,
         REM,
         REMU,
-        
-        // Operations for Student Task 4
-        FLT,
-        FNEQZ,
     };
 }
 
@@ -523,19 +513,6 @@ static Opcode::mapping decode(Instruction &instr) {
                     return CSRRSI;
                 case F3_CSRRCI:
                     return CSRRCI;
-            }
-            break;
-        }
-
-        // TODO: Student Task 4
-        // Decode FLZ FLTZ
-
-        case OP_FOR: {
-            switch (instr.funct3()) {
-                case F3_FLT:
-                    return FLT;
-                case F3_FNEQZ:
-                    return FNEQZ;
             }
             break;
         }
