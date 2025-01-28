@@ -27,8 +27,6 @@ int main() {
 	int a = 6;
 	int b = 7;
 	a = a + b + x + y;
-	syscall(printInt, 42);
-	syscall(printChar, 'a'); // a
 	
 	syscall(printString, "a + b + x + y = ");
 	syscall(printInt, a);

@@ -15,3 +15,7 @@ end:
     mv a0,a2       # Move Result into a0
     li a7,93       # Set exit syscall
     ecall
+
+
+# Runtime Complexity: 
+# O( a0 * 4 + 8 ) => O( a0 ) => O(n)
